@@ -8,7 +8,15 @@
 
     <body>
         <h1>Rango says...</h1>
-        hello world! <strong>{{ boldmessage }}</strong><br />
+	{% if categories %}
+	<ul>
+		{% for i in categories %}
+		<li>{{i.name}}</li>
+		{% endfor %}
+	</ul>
+	{% else %}
+		<strong>No Categories present</strong>
+	{% endif %}
         <a href="/rango/about/">About</a><br />
 	<img src="/static/images/rango.gif" alt="Picture of Rango" /> 
     </body>

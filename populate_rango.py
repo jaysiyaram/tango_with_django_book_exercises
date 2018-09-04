@@ -57,7 +57,7 @@ def add_page(cat, title, url, views=0):
 
 if __name__ == "__main__":
     print("Starting rango population script..")
-    import pdb; pdb.set_trace()
+    # import pdb; pdb.set_trace()
     populate()
 
 
