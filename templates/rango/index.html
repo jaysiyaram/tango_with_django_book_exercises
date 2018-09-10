@@ -10,8 +10,8 @@
         <h1>Rango says...</h1>
 	{% if categories %}
 	<ul>
-		{% for i in categories %}
-		<li>{{i.name}}</li>
+		{% for category in categories %}
+		<li><a href="/rango/category/{{ category.slug }}">{{ category.name }}</a></li>
 		{% endfor %}
 	</ul>
 	{% else %}
